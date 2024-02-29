@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+	<!--FontAwesome CDN-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<!--style另開檔案寫-->
+	<link rel="stylesheet" href="style.css">
+	<title>我的Bootstrap網頁</title>
+</head>
+
+<body>
+	<!--導覽列-->
+	<nav class="navbar navbar-light navbar-expand-md" style="background-color:#ADD8E6">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="首頁.html" title="首頁"><b>台北市商圈</b></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbar1">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b>東區</b></a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="大安區.html"><b>大安區</b></a>
+							<a class="dropdown-item" href="信義區.html"><b>信義區</b></a>
+							<a class="dropdown-item" href="南港區.html"><b>南港區</b></a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b>南區</b></a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="文山區.html"><b>文山區</b></a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b>西區</b></a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="大同區.html"><b>大同區</b></a>
+							<a class="dropdown-item" href="中正區.html"><b>中正區</b></a>
+							<a class="dropdown-item" href="萬華區.html"><b>萬華區</b></a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b>北區</b></a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="北投區.html"><b>北投區</b></a>
+							<a class="dropdown-item" href="士林區.html"><b>士林區</b></a>
+							<a class="dropdown-item" href="內湖區.html"><b>內湖區</b></a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b>中區</b></a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="中山區.html"><b>中山區</b></a>
+							<a class="dropdown-item" href="松山區.html"><b>松山區</b></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<!--網頁介紹-->
+		<p class="introduction content-item" title="簡介"><span class="enlarged-text"><b>台北商圈吃玩買</b></span></p>
+		<p class="introduction-content" title="簡介內容"><span class="content-text">
+				疫情剛剛結束，旅遊業正漸漸復甦，台北商圈也慢慢地恢復生機。
+				但台北的商圈那麼多，從外縣市或其他國家來台北遊玩的遊客要怎麼在景點上做選擇呢?
+				為了替遊客們分憂，在這邊我們將台北市的商圈分類整理，以行政區來做區分。
+				另外還列出了目前排名前三的商圈，讓遊客們不會選擇困難。
+				除了一些知名的夜市外，我們還加上了一些有著特殊創立意義的商圈。
+				希望可以藉此讓所有來到台北的遊客參考遊玩，度過一個愉快的假期。
+			</span>
+		</p>
+		<hr><!--Horizontal line-->
+		<div class="image-container">
+			<img src="map1.jpg" class="img fluid d-block w-100 img-item" title="台北市商圈捷運地圖">
+		</div>
+		<p class="img-content" title="圖片內容"><span class="content-text">
+				這張圖是台北捷運圖，上面的每個數字都是一個可以逛的商圈。</span></p>
+		<hr><!--Horizontal line-->
+		<p class="rank content-item" title="排名"><span class="enlarged-text"><b>大台北商圈人潮數排名</b></span></p>
+		<div class="row">
+			<!--輪播1-->
+			<article>
+				<div id="myCarousel1" class="carousel slide" data-bs-ride="carousel1">
+					<ol class="carousel-indicators">
+						<li data-bs-target="#myCarousel1" data-bs-slide-to="0" class="active"></li>
+						<li data-bs-target="#myCarousel1" data-bs-slide-to="1"></li>
+						<li data-bs-target="#myCarousel1" data-bs-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<a href="信義區.html#anchor-id">
+								<img src="信義計畫區百貨商圈.jpg" class="img-fluid d-block w-100" alt="信義計畫區百貨商圈">
+								<div class="carousel-caption d-md-block">
+									<h5>第一名:信義計畫區百貨商圈</h5>
+								</div>
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="大安區.html#anchor-id">
+								<img src="東區商圈.jpg" class="img-fluid d-block w-100" alt="東區商圈">
+								<div class="carousel-caption d-md-block">
+									<h5>第二名:東區商圈</h5>
+								</div>
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="萬華區.html#anchor-id">
+								<img src="西門町商圈.jpg" class="img-fluid d-block w-100" alt="西門町商圈">
+								<div class="carousel-caption d-md-block">
+									<h5>第三名:西門町商圈</h5>
+								</div>
+							</a>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#myCarousel1" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+						<span class="visually-hidden">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#myCarousel1" data-bs-slide="next">
+						<span class="carousel-control-next-icon"></span>
+						<span class="visually-hidden">Next</span>
+					</a>
+				</div>
+			</article>
+		</div>
+	</div>
+	<a id="scrollToTop" href="#" onclick="scrollToTop()">
+		<span id="scrollToTopText">Top</span>
+		<i class="fa fa-arrow-up"></i>
+	</a>
+	<footer>
+		<div class="container-fluid footer">
+			<p>聯絡我們: <a href="mailto:lillian.lee.0@gmail.com">shopping.area@gmail.com</a></p>
+			<p id="update-date"></p>
+			<p>Copyright © 2023 Lillian. All rights reserved.</p>
+			<p>(=ↀωↀ=)喵~~~~~~</p>
+		</div>
+	</footer>
+	<!-- Bootstrap的JavaScript插件需要放在body標籤的結尾 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+	<script>
+		// 捲動至頂部按鈕的顯示/隱藏
+		window.onscroll = function () {
+			scrollFunction();
+		};
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("scrollToTop").style.display = "block";
+			} else {
+				document.getElementById("scrollToTop").style.display = "none";
+			}
+		}
+		// 點擊按鈕捲動至頂部
+		function scrollToTop() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="更新日期script.js"></script>
+</body>
+
+</html>
